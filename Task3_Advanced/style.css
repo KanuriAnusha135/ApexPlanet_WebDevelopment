@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+/* Header */
+.header {
+    background: #4f46e5;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main layout */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 45px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: #4f46e5;
+}
+
+/* Quiz */
+#options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option-button {
+    padding: 12px;
+    background: #e0e7ff;
+    color: #312e81;
+    border: 2px solid #c7d2fe;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option-button:hover {
+    background: #c7d2fe;
+}
+
+.correct {
+    background: #bbf7d0 !important;
+    border-color: #16a34a !important;
+}
+
+.wrong {
+    background: #fecaca !important;
+    border-color: #dc2626 !important;
+}
+
+/* Inputs and buttons */
+input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+#quizResult,
+#weatherResult {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    #options {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
