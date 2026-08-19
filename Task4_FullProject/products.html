@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anu's Product Store</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <header class="store-header">
+        <h1>🛍️ Anu's Product Store</h1>
+        <p>Filter and sort products easily</p>
+    </header>
+
+    <main class="store-container">
+
+        <section class="controls">
+
+            <label for="categoryFilter">Category:</label>
+
+            <select id="categoryFilter">
+                <option value="all">All Products</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Books">Books</option>
+            </select>
+
+            <label for="sortProducts">Sort By:</label>
+
+            <select id="sortProducts">
+                <option value="default">Default</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+                <option value="ratingHigh">Rating: High to Low</option>
+            </select>
+
+        </section>
+
+        <section id="productContainer" class="product-grid">
+            <!-- Products will appear here -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Anu | ApexPlanet Web Development</p>
+    </footer>
+
+    <script src="products.js"></script>
+
+</body>
+</html>
